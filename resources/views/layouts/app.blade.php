@@ -12,9 +12,9 @@
 
 <body>
     @if (isset($header))
-        <div class="header">
-            {{ $header }}
-        </div>
+        <header class="header">
+           <h1 class="header__main-title"> {{ $header }}</h1>
+        </header>
     @endif
     {{ $slot }}
 </body>

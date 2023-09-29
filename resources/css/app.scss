@@ -1,9 +1,39 @@
+@import "mvp";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+.header {
+    max-width: 100%;
+    margin-bottom: 4rem;
+    background-color: rgba(#026b56, 0.6);
+
+    &__profile-name {
+        font-family: 'Handlee', cursive;
+                color: green;
+    }
+    &__main-title {
+        font-family: 'Roboto', sans-serif;
+        color: var(--color-bg);
+    }
+}
+
 .instagram-wrapper {
     max-width: 1190px;
-    margin: auto;
+    margin: 0 auto 10rem auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+
+    @media (min-width: 680px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1290px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     img {
         max-width: 100%;
     }

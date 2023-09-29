@@ -2,7 +2,7 @@
     <x-slot name="header">
         <div>
             @if ($datas->count() < 10)
-                {{ Str::ucfirst($profile->username) }} <span> {{ __('last posts') }} </span>
+                {{ Str::ucfirst(__('app.last_post')) }} " <span class="header__profile-name">{{Str::upper($profile->username)}} </span>"
             @else
                 {{ $profile->username . __('10 last posts') }}
             @endif
@@ -10,7 +10,9 @@
     </x-slot>
     <div class="instagram-wrapper">
         @foreach ($datas as $data)
-            <img src="{{ $data->url }}" alt="">
+            <a href="{{ $data->permalink }}" target="_blank">
+                <img src="{{ $data->url }}" alt="">
+            </a>
         @endforeach
     </div>
 </x-app-layout>
