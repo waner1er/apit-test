@@ -1,3 +1,5 @@
+![](screen_app.jpg)
+
 # Lancement du projet 
 
       $ composer install
