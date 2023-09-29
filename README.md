@@ -33,7 +33,9 @@ Pour le Test, le token a été validé sur le compte Instagram il faut donc dump
  - j'ai créé 2 commandes artisan pour appeler manuellement les photos de l'utilisateur wanerrivet et le rafraichir si besoin 
 	 - `php artisan wan-app:init-feed-command`
 	 - `wan-app:refresh-feed-command`
- J'ai également ajouté 2 commandes dans la fonction schedule que le serveur pourra appeler dans un cron et qui permettra de rafraichir le feed toutes les 4 heures et rafraichir le token tous les 15 du mois.
+ 
+ 
+J'ai également ajouté 2 commandes dans la fonction schedule que le serveur pourra appeler dans un cron et qui permettra de rafraichir le feed toutes les 4 heures et rafraichir le token tous les 15 du mois.
 
 Le jeton actuel est ainsi ok jusqu'au 15 octobre  2023
 
