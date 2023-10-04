@@ -1,6 +1,7 @@
 @import "mvp";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
 .header {
     max-width: 100%;
     margin-bottom: 4rem;
@@ -8,8 +9,9 @@
 
     &__profile-name {
         font-family: 'Handlee', cursive;
-                color: green;
+        color: green;
     }
+
     &__main-title {
         font-family: 'Roboto', sans-serif;
         color: var(--color-bg);
@@ -36,5 +38,7 @@
 
     img {
         max-width: 100%;
+        width: 250px;
+        height: 250px;
     }
 }
